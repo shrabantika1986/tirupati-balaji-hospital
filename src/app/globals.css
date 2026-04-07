@@ -1,0 +1,225 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&display=swap');
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* ─── CSS Variables ──────────────────────────────────────────────────────────── */
+:root {
+  --primary: #0057A8;
+  --primary-light: #1a6fc4;
+  --primary-dark: #003d77;
+  --secondary: #009B8A;
+  --accent: #E8832A;
+  --accent-light: #f09548;
+  --text-dark: #1E293B;
+  --text-mid: #475569;
+  --text-light: #94A3B8;
+  --bg-light: #F8FAFC;
+  --bg-section: #F1F5F9;
+  --white: #ffffff;
+  --border: #E2E8F0;
+  --shadow-sm: 0 2px 8px rgba(0,87,168,0.08);
+  --shadow-md: 0 4px 24px rgba(0,87,168,0.12);
+  --shadow-lg: 0 8px 40px rgba(0,87,168,0.18);
+  --radius: 12px;
+  --radius-sm: 8px;
+  --radius-lg: 20px;
+  --transition: all 0.3s cubic-bezier(0.4,0,0.2,1);
+}
+
+/* ─── Base Styles ─────────────────────────────────────────────────────────── */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  scroll-behavior: smooth;
+  font-size: 16px;
+}
+
+body {
+  font-family: 'Inter', system-ui, -apple-system, sans-serif;
+  color: var(--text-dark);
+  background-color: var(--white);
+  line-height: 1.6;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+/* ─── Typography ─────────────────────────────────────────────────────────── */
+h1, h2, h3, h4, h5, h6 {
+  font-family: 'Inter', sans-serif;
+  font-weight: 700;
+  line-height: 1.2;
+  color: var(--text-dark);
+}
+
+/* ─── Scrollbar Styling ──────────────────────────────────────────────────── */
+::-webkit-scrollbar { width: 6px; height: 6px; }
+::-webkit-scrollbar-track { background: var(--bg-section); }
+::-webkit-scrollbar-thumb { background: var(--primary); border-radius: 3px; }
+::-webkit-scrollbar-thumb:hover { background: var(--primary-dark); }
+
+/* ─── Swiper Overrides ───────────────────────────────────────────────────── */
+.hero-swiper .swiper-pagination-bullet {
+  width: 10px;
+  height: 10px;
+  background: rgba(255,255,255,0.5);
+  opacity: 1;
+  transition: var(--transition);
+}
+.hero-swiper .swiper-pagination-bullet-active {
+  width: 32px;
+  border-radius: 5px;
+  background: var(--accent);
+}
+.hero-swiper .swiper-button-next,
+.hero-swiper .swiper-button-prev {
+  color: white;
+  background: rgba(255,255,255,0.15);
+  backdrop-filter: blur(8px);
+  width: 48px;
+  height: 48px;
+  border-radius: 50%;
+  border: 1px solid rgba(255,255,255,0.3);
+  transition: var(--transition);
+}
+.hero-swiper .swiper-button-next:hover,
+.hero-swiper .swiper-button-prev:hover {
+  background: var(--accent);
+  border-color: var(--accent);
+}
+.hero-swiper .swiper-button-next::after,
+.hero-swiper .swiper-button-prev::after {
+  font-size: 18px;
+  font-weight: 700;
+}
+
+/* Department mega menu swiper */
+.dept-swiper .swiper-button-next,
+.dept-swiper .swiper-button-prev {
+  color: var(--primary);
+  width: 32px;
+  height: 32px;
+}
+.dept-swiper .swiper-button-next::after,
+.dept-swiper .swiper-button-prev::after { font-size: 14px; }
+
+/* ─── Utility Classes ────────────────────────────────────────────────────── */
+@layer utilities {
+  .section-padding { @apply py-16 lg:py-24; }
+  .container-custom { @apply container mx-auto px-4 sm:px-6 lg:px-8; }
+  
+  .section-label {
+    @apply text-sm font-700 uppercase tracking-widest text-secondary-500 mb-2;
+  }
+
+  .section-title {
+    @apply text-3xl md:text-4xl font-800 text-neutral-800 leading-tight;
+  }
+
+  .gradient-text {
+    @apply bg-clip-text text-transparent;
+    background-image: linear-gradient(135deg, var(--primary) 0%, var(--secondary) 100%);
+  }
+
+  .btn-primary {
+    @apply inline-flex items-center gap-2 bg-accent-500 hover:bg-accent-600 text-white 
+           font-600 px-6 py-3 rounded-full transition-all duration-300 
+           shadow-button hover:shadow-lg hover:-translate-y-0.5;
+  }
+
+  .btn-secondary {
+    @apply inline-flex items-center gap-2 bg-white hover:bg-primary-50 text-primary-600 
+           border border-primary-200 font-600 px-6 py-3 rounded-full transition-all duration-300
+           hover:border-primary-400;
+  }
+
+  .btn-outline-white {
+    @apply inline-flex items-center gap-2 border-2 border-white text-white 
+           hover:bg-white hover:text-primary-600 font-600 px-6 py-3 rounded-full 
+           transition-all duration-300;
+  }
+
+  .card-hospital {
+    @apply bg-white rounded-2xl shadow-card hover:shadow-card-hover transition-all 
+           duration-300 hover:-translate-y-1 overflow-hidden;
+  }
+
+  .animate-on-scroll {
+    @apply opacity-0 translate-y-6 transition-all duration-700 ease-out;
+  }
+  .animate-on-scroll.visible {
+    @apply opacity-100 translate-y-0;
+  }
+}
+
+/* ─── Section Label Eyebrow ──────────────────────────────────────────────── */
+.eyebrow {
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  font-size: 0.8rem;
+  font-weight: 700;
+  letter-spacing: 0.12em;
+  text-transform: uppercase;
+  color: var(--secondary);
+  margin-bottom: 12px;
+}
+.eyebrow::before {
+  content: '';
+  display: block;
+  width: 24px;
+  height: 2px;
+  background: var(--secondary);
+  border-radius: 1px;
+}
+
+/* ─── Page Hero Banner ───────────────────────────────────────────────────── */
+.page-hero {
+  background: linear-gradient(135deg, var(--primary-dark) 0%, var(--primary) 50%, var(--secondary) 100%);
+  padding: 80px 0 64px;
+  color: white;
+  position: relative;
+  overflow: hidden;
+}
+.page-hero::before {
+  content: '';
+  position: absolute;
+  inset: 0;
+  background: url("data:image/svg+xml,%3Csvg width='60' height='60' viewBox='0 0 60 60' xmlns='http://www.w3.org/2000/svg'%3E%3Cg fill='none' fill-rule='evenodd'%3E%3Cg fill='%23ffffff' fill-opacity='0.04'%3E%3Ccircle cx='30' cy='30' r='4'/%3E%3C/g%3E%3C/g%3E%3C/svg%3E");
+}
+
+/* ─── Number Counter ─────────────────────────────────────────────────────── */
+.counter-value {
+  font-variant-numeric: tabular-nums;
+}
+
+/* ─── Card hover lift ────────────────────────────────────────────────────── */
+.hover-lift {
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+.hover-lift:hover {
+  transform: translateY(-4px);
+  box-shadow: var(--shadow-lg);
+}
+
+/* ─── Pulse Ring (for emergency button) ─────────────────────────────────── */
+.pulse-ring {
+  position: relative;
+}
+.pulse-ring::before {
+  content: '';
+  position: absolute;
+  inset: -4px;
+  border-radius: inherit;
+  border: 2px solid currentColor;
+  opacity: 0;
+  animation: pulse-out 2s ease-out infinite;
+}
+@keyframes pulse-out {
+  0% { opacity: 0.7; transform: scale(1); }
+  100% { opacity: 0; transform: scale(1.3); }
+}
