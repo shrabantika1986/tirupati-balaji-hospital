@@ -1,5 +1,7 @@
 'use client'
 import { useState, useEffect, useRef } from 'react'
+import Image from "next/image";
+
 import Link from 'next/link'
 import {
   Phone, ChevronDown, Menu, X, Calendar, Search
@@ -94,13 +96,14 @@ export default function Header() {
         <div className="container-custom flex items-center justify-between gap-4">
           {/* Logo */}
           <Link href="/" className="flex items-center gap-3 shrink-0" onClick={() => setMobileMenuOpen(false)}>
-            <div className="w-12 h-12 rounded-xl bg-gradient-to-br from-primary-500 to-secondary-500 flex items-center justify-center shadow-md shrink-0">
-              <span className="text-white font-black text-xl leading-none">TB</span>
-            </div>
-            <div className="hidden sm:block leading-tight">
-              <div className="font-extrabold text-primary-700 text-lg leading-none">Tirupoti Balaji</div>
-              <div className="text-xs text-neutral-500 font-medium tracking-wide">Multi-Specialty Hospital</div>
-            </div>
+           
+
+<Image
+  src="/images/tb-logo.png"
+  alt="TB Logo"
+  width={61}
+  height={64}
+/>
           </Link>
 
           {/* Desktop Nav */}
