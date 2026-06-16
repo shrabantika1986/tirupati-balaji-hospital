@@ -6,7 +6,7 @@ export const bannerSlides: BannerSlide[] = [
   {
     id: 'slide-1',
     type: 'image',
-    src: 'https://images.unsplash.com/photo-1519494026892-80bbd2d6fd0d?w=1600&q=85&fit=crop',
+    src: '/images/banner-img.webp',
     title: 'Advanced Healthcare for Every Family',
     subtitle: 'World-class multi-specialty care with cutting-edge diagnostics and compassionate doctors — your health is our highest priority.',
     ctaPrimary: { label: 'Book Appointment', href: '/contact' },
@@ -15,7 +15,7 @@ export const bannerSlides: BannerSlide[] = [
   {
     id: 'slide-2',
     type: 'image',
-    src: 'https://images.unsplash.com/photo-1551190822-a9333d879b1f?w=1600&q=85&fit=crop',
+    src: '/images/banner-img1.jpg',
     title: 'Expert Surgeons, Modern Operation Theatres',
     subtitle: 'State-of-the-art modular OTs equipped with the latest surgical technology for precision and safety in every procedure.',
     ctaPrimary: { label: 'Our Departments', href: '/departments' },
@@ -24,7 +24,7 @@ export const bannerSlides: BannerSlide[] = [
   {
     id: 'slide-3',
     type: 'image',
-    src: 'https://images.unsplash.com/photo-1576091160550-2173dba999ef?w=1600&q=85&fit=crop',
+    src: '/images/banner-img2.jpg',
     title: '24 × 7 Emergency & Critical Care',
     subtitle: 'Round-the-clock ICU, emergency response, and advanced diagnostic services so you are never left without timely care.',
     ctaPrimary: { label: 'Emergency Helpline', href: 'tel:08662500108' },
@@ -32,6 +32,17 @@ export const bannerSlides: BannerSlide[] = [
   },
   {
     id: 'slide-4',
+    type: 'image',
+    src: '/images/banner-img3.jpg',
+    poster: 'https://images.unsplash.com/photo-1586773860418-d37222d8fce3?w=1600&q=85&fit=crop',
+    title: 'Excellence in Healthcare, Compassion in Care',
+    subtitle: 'With modern facilities and patient-focused treatment, we strive to ensure the best care and faster recovery for every patient.',
+    ctaPrimary: { label: 'Virtual Tour', href: '/gallery' },
+    ctaSecondary: { label: 'Contact Us', href: '/contact' },
+  },
+
+  {
+    id: 'slide-5',
     type: 'video',
     src: '/videos/hospital-tour.mp4',
     poster: 'https://images.unsplash.com/photo-1586773860418-d37222d8fce3?w=1600&q=85&fit=crop',
@@ -45,10 +56,10 @@ export const bannerSlides: BannerSlide[] = [
 // ─── Why Choose Us ────────────────────────────────────────────────────────────
 
 export const whyChooseUsPoints = [
-  'Team of 150+ renowned specialist doctors',
+  'Team of 50+ renowned specialist doctors',
   'Advanced robotic and laparoscopic surgery',
   'ISO-certified laboratory with NABL accreditation',
-  'Cashless treatment via 300+ insurance partners',
+  'Cashless treatment via 100+ insurance partners',
   'Patient-first approach with 24/7 support',
   'Affordable pricing without compromise on care',
 ]

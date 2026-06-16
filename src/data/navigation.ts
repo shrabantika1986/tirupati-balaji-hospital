@@ -10,11 +10,11 @@ export const navigationData: NavItem[] = [
     href: '/about',
   },
   {
-    label: 'Find A Doctor',
+    label: 'Find Our Doctors',
     href: '/find-a-doctor',
   },
   {
-    label: 'Departments',
+    label: 'Our Departments',
     href: '/departments',
     megaMenu: true,
     children: [
@@ -73,7 +73,7 @@ export const navigationData: NavItem[] = [
 ]
 
 export const topBarLinks = [
-  { label: 'Emergency: 0866-250-0108', href: 'tel:08662500108', icon: 'phone' },
-  { label: 'OPD: 0866-250-0109', href: 'tel:08662500109', icon: 'phone' },
-  { label: 'Diagnostics: 0866-250-0110', href: 'tel:08662500110', icon: 'phone' },
+  { label: 'Emergency: 7596896054', href: 'tel:7596896054', icon: 'phone' },
+  { label: 'OPD: 6290345648', href: 'tel:6290345648', icon: 'phone' },
+  { label: 'Diagnostics: 9038704929', href: 'tel:9038704929', icon: 'phone' },
 ]

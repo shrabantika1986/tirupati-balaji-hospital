@@ -43,7 +43,7 @@ export default function Header() {
   return (
     <>
       {/* Top Bar – Mobile */}
-      <div className="bg-primary-800 text-white py-1.5 hidden md:block lg:hidden">
+      <div className="bg-[#2f358e] text-white py-1.5 hidden md:block lg:hidden">
         <div className="container-custom flex items-center justify-center gap-4 overflow-x-auto scrollbar-hide">
           {topBarLinks.map((link) => (
             <a
@@ -59,25 +59,25 @@ export default function Header() {
       </div>
 
       {/* Top Bar – Desktop */}
-      <div className="bg-primary-800 text-white text-sm py-2 hidden lg:block">
+      <div className="bg-[#2f358e] text-white text-sm py-2 hidden lg:block">
         <div className="container-custom flex items-center justify-between">
           <div className="flex items-center gap-6">
             {topBarLinks.map((link) => (
               <a
                 key={link.label}
                 href={link.href}
-                className="flex items-center gap-1.5 text-white/80 hover:text-accent-300 transition-colors"
+                className="flex items-center gap-1.5 text-white hover:text-[#eb1f27] transition-colors"
               >
                 <Phone size={13} />
                 <span>{link.label}</span>
               </a>
             ))}
           </div>
-          <div className="flex items-center gap-4 text-white/70 text-xs">
+          <div className="flex items-center gap-4 text-white text-xs">
             <span>Emergency: Available 24×7</span>
-            <span className="w-px h-4 bg-white/20" />
-            <a href="mailto:info@tirupoticarebalaji.com" className="hover:text-white transition-colors">
-              info@tirupoticarebalaji.com
+            <span className="w-px h-4 bg-white" />
+            <a href="mailto:tirupatibalaji180524@gmail.com" className="hover:text-[#eb1f27] transition-colors">
+              tirupatibalaji180524@gmail.com
             </a>
           </div>
         </div>
@@ -98,12 +98,12 @@ export default function Header() {
           <Link href="/" className="flex items-center gap-3 shrink-0" onClick={() => setMobileMenuOpen(false)}>
            
 
-<Image
-  src="/images/tb-logo.png"
-  alt="TB Logo"
-  width={61}
-  height={64}
-/>
+            <Image
+              src="/images/tb-logo.png"
+              alt="TB Logo"
+              width={61}
+              height={64}
+            />
           </Link>
 
           {/* Desktop Nav */}
@@ -117,8 +117,8 @@ export default function Header() {
                     className={cn(
                       'flex items-center gap-1 px-3 py-2 rounded-lg font-semibold text-sm transition-colors',
                       activeDropdown === item.label
-                        ? 'text-primary-600 bg-primary-50'
-                        : 'text-neutral-700 hover:text-primary-600 hover:bg-primary-50'
+                        ? 'text-[#2d358f] bg-primary-50'
+                        : 'text-neutral-700 hover:text-white hover:bg-[#2d358f]'
                     )}
                   >
                     {item.label}
@@ -130,7 +130,7 @@ export default function Header() {
                 ) : (
                   <Link
                     href={item.href}
-                    className="flex items-center px-3 py-2 rounded-lg font-semibold text-sm text-neutral-700 hover:text-primary-600 hover:bg-primary-50 transition-colors"
+                    className="flex items-center px-3 py-2 rounded-lg font-semibold text-sm text-neutral-700 over:text-primary-600 hover:bg-primary-50 transition-colors"
                   >
                     {item.label}
                   </Link>
@@ -215,7 +215,7 @@ export default function Header() {
             </button>
             <button
               onClick={() => openModal()}
-              className="flex items-center gap-2 bg-accent-500 hover:bg-accent-600 text-white font-semibold px-5 py-2.5 rounded-full transition-all duration-300 shadow-button hover:shadow-lg hover:-translate-y-0.5 text-sm"
+              className="flex items-center gap-2 bg-[#eb1d26] hover:bg-transparent text-white hover:text-[#2d358f] hover:border-spacing-2 hover:border-[#eb1d26] font-semibold px-5 py-2.5 rounded-full transition-all duration-300 shadow-button hover:shadow-none hover:-translate-y-0.5 text-sm"
             >
               <Calendar size={15} />
               Book Appointment
@@ -333,11 +333,11 @@ export default function Header() {
               Book Appointment
             </button>
             <a
-              href="tel:08662500108"
+              href="tel:7596896054"
               className="w-full flex items-center justify-center gap-2 border-2 border-primary-200 text-primary-600 font-semibold py-3 rounded-xl hover:bg-primary-50 transition-colors text-sm"
             >
               <Phone size={16} />
-              Emergency: 0866-250-0108
+              Emergency: 7596896054
             </a>
           </div>
         </div>

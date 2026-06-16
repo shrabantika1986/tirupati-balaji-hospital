@@ -1,6 +1,6 @@
 export const aboutData = {
   hero: {
-    title: 'Welcome to Tirupoti Balaji Hospital',
+    title: 'Welcome to Tiruputi Balaji Health Care Group',
     subtitle:
       'Tirupoti Balaji Multi-Specialty Hospital is a premier, patient-centric healthcare institution equipped with advanced diagnostic imaging, modern operation theatres, and a distinguished panel of specialists — all united by a single mission: to restore health and improve lives.',
     image: 'https://images.unsplash.com/photo-1519494026892-80bbd2d6fd0d?w=1200&q=80&fit=crop',
