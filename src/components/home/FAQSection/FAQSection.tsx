@@ -63,10 +63,10 @@ export default function FAQSection() {
                 Our patient care team is available 24×7 to assist you.
               </p>
               <a
-                href="tel:08662500108"
+                href="tel:7596896054"
                 className="inline-flex items-center gap-2 bg-white text-primary-700 font-bold text-sm px-4 py-2.5 rounded-full hover:bg-accent-50 transition-colors"
               >
-                📞 Call 0866-250-0108
+                📞 Call 7596896054
               </a>
             </div>
           </div>

@@ -27,16 +27,16 @@ export default function Footer() {
           {/* Brand Column */}
           <div className="lg:col-span-1">
             <Link href="/" className="flex items-center gap-3 mb-5">
-              <div className="w-12 h-12 rounded-xl bg-gradient-to-br from-primary-400 to-secondary-400 flex items-center justify-center shadow-md shrink-0">
-                <span className="text-white font-black text-xl">TB</span>
+              <div className="w-14 h-14 rounded-xl p-2 bg-white flex items-center justify-center shadow-md shrink-0">
+                <a href="footer-logo"><img src='/images/footer-logo.png'></img></a>
               </div>
               <div className="leading-tight">
-                <div className="font-extrabold text-white text-lg leading-none">Tirupoti Balaji</div>
-                <div className="text-xs text-white/50 font-medium tracking-wide mt-0.5">Multi-Specialty Hospital</div>
+                <div className="font-extrabold text-white text-lg leading-none">Tirupati Balaji</div>
+                <div className="text-xs text-white/50 font-medium tracking-wide mt-0.5">Health Care Group</div>
               </div>
             </Link>
             <p className="text-neutral-400 text-sm leading-relaxed mb-6">
-              Tirupoti Balaji Multi-Specialty Hospital is dedicated to delivering world-class, compassionate healthcare to the people of Andhra Pradesh since 1996.
+              Tirupati Balaji Health Care Group is a trusted multi-specialty healthcare institution dedicated to providing compassionate, affordable, and high-quality medical care.
             </p>
             {/* Social Links */}
             <div className="flex items-center gap-3">
@@ -66,9 +66,9 @@ export default function Footer() {
                 <li key={link.label}>
                   <Link
                     href={link.href}
-                    className="text-sm text-neutral-400 hover:text-accent-400 transition-colors flex items-center gap-1.5 group"
+                    className="text-sm text-neutral-400 hover:text-[#ec2126] transition-colors flex items-center gap-1.5 group"
                   >
-                    <span className="w-1 h-1 rounded-full bg-neutral-600 group-hover:bg-accent-400 transition-colors" />
+                    <span className="w-1 h-1 rounded-full bg-neutral-600 group-hover:bg-[#ec2126] transition-colors" />
                     {link.label}
                   </Link>
                 </li>
@@ -84,9 +84,9 @@ export default function Footer() {
                 <li key={dept.slug}>
                   <Link
                     href={`/departments/${dept.slug}`}
-                    className="text-sm text-neutral-400 hover:text-accent-400 transition-colors flex items-center gap-1.5 group"
+                    className="text-sm text-neutral-400 hover:text-[#ec2126] transition-colors flex items-center gap-1.5 group"
                   >
-                    <span className="w-1 h-1 rounded-full bg-neutral-600 group-hover:bg-accent-400 transition-colors" />
+                    <span className="w-1 h-1 rounded-full bg-neutral-600 group-hover:bg-[#ec2126] transition-colors" />
                     {dept.name}
                   </Link>
                 </li>
@@ -107,12 +107,12 @@ export default function Footer() {
             <h3 className="text-sm font-bold uppercase tracking-widest text-white/50 mb-5">Get In Touch</h3>
             <div className="space-y-4">
               <div className="flex items-start gap-3">
-                <MapPin size={16} className="text-accent-400 mt-0.5 shrink-0" />
+                <MapPin size={16} className="text-[#ec2126] mt-0.5 shrink-0" />
                 <p className="text-sm text-neutral-400 leading-relaxed">{contactInfo.address}</p>
               </div>
               {contactInfo.phone.map((p) => (
                 <div key={p.label} className="flex items-center gap-3">
-                  <Phone size={15} className="text-accent-400 shrink-0" />
+                  <Phone size={15} className="text-[#ec2126] shrink-0" />
                   <div>
                     <p className="text-xs text-neutral-500 leading-none mb-0.5">{p.label}</p>
                     <a href={`tel:${p.value.replace(/[\s-]/g, '')}`} className="text-sm text-neutral-300 hover:text-white transition-colors font-medium">
@@ -122,7 +122,7 @@ export default function Footer() {
                 </div>
               ))}
               <div className="flex items-center gap-3">
-                <Mail size={15} className="text-accent-400 shrink-0" />
+                <Mail size={15} className="text-[#ec2126] shrink-0" />
                 <a href={`mailto:${contactInfo.email}`} className="text-sm text-neutral-400 hover:text-white transition-colors">
                   {contactInfo.email}
                 </a>
@@ -147,10 +147,10 @@ export default function Footer() {
       <div className="border-t border-white/10">
         <div className="container-custom py-5 flex flex-col sm:flex-row items-center justify-between gap-4 text-sm text-neutral-500">
           <p>
-            © {new Date().getFullYear()} Tirupoti Balaji Hospital. All Rights Reserved.
+            © {new Date().getFullYear()} Tirupati Balaji Health Care Group. All Rights Reserved.
           </p>
           <p className="flex items-center gap-1.5">
-            Crafted with <Heart size={13} className="text-red-500 fill-red-500" /> for better health
+            Crafted with <Heart size={13} className="text-[#ec2126] fill-red-500" /> for better health
           </p>
           <div className="flex items-center gap-4">
             <Link href="/privacy-policy" className="hover:text-white transition-colors">Privacy Policy</Link>

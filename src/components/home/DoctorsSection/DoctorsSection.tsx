@@ -42,7 +42,7 @@ export default function DoctorsSection() {
                   </div>
                 </div>
                 {/* Experience badge */}
-                <div className="absolute -bottom-1 -right-1 bg-accent-500 text-white text-xs font-bold px-2 py-0.5 rounded-full shadow">
+                <div className="absolute -bottom-1 -right-1 bg-[#ec1f27] text-white text-xs font-bold px-2 py-0.5 rounded-full shadow">
                   {doctor.experience}y
                 </div>
               </div>

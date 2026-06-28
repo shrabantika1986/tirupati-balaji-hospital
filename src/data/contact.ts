@@ -1,17 +1,17 @@
 import type { ContactInfo } from '@/types'
 
 export const contactInfo: ContactInfo = {
-  address: 'Tirupoti Balaji Hospital, NH-16 Bypass Road, Beside Kanaka Durga Temple, Vijayawada – 520 008, Andhra Pradesh, India',
+  address: 'Tirupati Balaji Health Care Group, 34/1A, B.T. Road, Kolkata - 700002',
   phone: [
-    { label: 'Hospital (Main)', value: '0866-250-0108' },
-    { label: 'OPD Appointments', value: '0866-250-0109' },
-    { label: 'Diagnostic Centre', value: '0866-250-0110' },
+    { label: 'Hospital (Main)', value: '7596896054' },
+    { label: 'OPD Appointments', value: '6290345648' },
+    { label: 'Diagnostic Centre', value: '9038704929' },
   ],
-  email: 'info@tirupoticarebalaji.com',
+  email: 'tirupatibalaji180524@gmail.com',
   emergencyPhone: '0866-250-0108',
   hours: [
     { label: 'Emergency & ICU', value: '24 × 7 (Always Open)' },
-    { label: 'OPD (Specialist)', value: 'Mon – Sat: 8:00 AM – 8:00 PM' },
+    { label: 'OPD (Specialist)', value: 'Mon – Sun: 8:00 AM – 8:00 PM' },
     { label: 'Diagnostic Lab', value: '24 × 7 (Always Open)' },
     { label: 'Pharmacy', value: '24 × 7 (Always Open)' },
   ],

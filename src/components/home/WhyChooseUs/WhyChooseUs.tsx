@@ -28,7 +28,7 @@ export default function WhyChooseUs() {
               <div className="text-xs mt-1 font-semibold opacity-90">Years of Excellence</div>
             </div>
             <div className="absolute -top-6 -left-6 bg-white rounded-2xl p-4 shadow-card hidden md:block border border-neutral-100">
-              <div className="text-2xl font-extrabold text-[#2e358f] leading-none">5K+</div>
+              <div className="text-2xl font-extrabold text-[#2e358f] leading-none">2K+</div>
               <div className="text-xs text-neutral-500 mt-1">Happy Patients</div>
             </div>
           </div>

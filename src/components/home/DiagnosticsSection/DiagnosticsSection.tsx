@@ -30,7 +30,7 @@ export default function DiagnosticsSection() {
               />
               <div className="absolute inset-0 bg-gradient-to-t from-primary-900/70 to-transparent" />
               <div className="absolute bottom-5 left-5">
-                <span className="bg-accent-500 text-white text-xs font-bold px-3 py-1.5 rounded-full uppercase tracking-wide">
+                <span className="bg-[#ec1f27] text-white text-xs font-bold px-3 py-1.5 rounded-full uppercase tracking-wide">
                   Featured
                 </span>
                 <h3 className="text-white text-2xl font-extrabold mt-2">{main.title}</h3>
@@ -76,9 +76,9 @@ export default function DiagnosticsSection() {
 
             {/* CTA Card */}
             <div className="bg-gradient-to-r from-primary-600 to-secondary-500 rounded-2xl p-6 text-white">
-              <h3 className="font-bold text-lg mb-2">CT Angiography with Auto-Injector</h3>
+              <h3 className="font-bold text-lg mb-2">Advanced Dialysis Unit</h3>
               <p className="text-white/80 text-sm mb-4">
-                Fast, precise vascular imaging for timely diagnosis of cardiovascular conditions with patient-friendly contrast delivery.
+                At Tirupati Balaji Health Care Group, our Advanced Dialysis Unit is dedicated to providing safe, effective, and compassionate care for patients suffering from kidney-related disorders and chronic kidney disease. Equipped with modern dialysis machines and supported by experienced nephrologists, trained technicians, and nursing staff, we ensure the highest standards of treatment in a comfortable and hygienic environment.
               </p>
               <Button href="/services/diagnostics" variant="outline-white" size="sm">
                 View All Services

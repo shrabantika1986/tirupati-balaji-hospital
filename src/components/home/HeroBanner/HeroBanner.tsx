@@ -150,7 +150,7 @@ export default function HeroBanner({ slides }: HeroBannerProps) {
               { icon: '⭐', label: '1+ Years of Excellence', value: 'Est. 2024' },
               { icon: '👨‍⚕️', label: 'Expert Doctors', value: '50+' },
               { icon: '🏥', label: 'Specialties', value: '20+' },
-              { icon: '❤️', label: 'Happy Patients', value: '10 Thousands+' },
+              { icon: '❤️', label: 'Happy Patients', value: '2k+' },
             ].map((stat) => (
               <div key={stat.label} className="flex items-center gap-3 px-6">
                 <span className="text-2xl">{stat.icon}</span>

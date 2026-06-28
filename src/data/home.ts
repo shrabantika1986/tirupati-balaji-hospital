@@ -6,7 +6,7 @@ export const bannerSlides: BannerSlide[] = [
   {
     id: 'slide-1',
     type: 'image',
-    src: '/images/banner-img.webp',
+    src: '/images/banner.jpg',
     title: 'Advanced Healthcare for Every Family',
     subtitle: 'World-class multi-specialty care with cutting-edge diagnostics and compassionate doctors — your health is our highest priority.',
     ctaPrimary: { label: 'Book Appointment', href: '/contact' },
@@ -15,7 +15,7 @@ export const bannerSlides: BannerSlide[] = [
   {
     id: 'slide-2',
     type: 'image',
-    src: '/images/banner-img1.jpg',
+    src: '/images/banner-1.webp',
     title: 'Expert Surgeons, Modern Operation Theatres',
     subtitle: 'State-of-the-art modular OTs equipped with the latest surgical technology for precision and safety in every procedure.',
     ctaPrimary: { label: 'Our Departments', href: '/departments' },
@@ -43,8 +43,8 @@ export const bannerSlides: BannerSlide[] = [
 
   {
     id: 'slide-5',
-    type: 'video',
-    src: '/videos/hospital-tour.mp4',
+    type: 'image',
+    src: '/images/banner-2.webp',
     poster: 'https://images.unsplash.com/photo-1586773860418-d37222d8fce3?w=1600&q=85&fit=crop',
     title: 'Healing with Innovation & Dedication',
     subtitle: 'Take a virtual tour of our world-class facilities and experience the Tirupoti Balaji Hospital difference.',
@@ -69,28 +69,28 @@ export const whyChooseUsPoints = [
 export const statsData: StatItem[] = [
   {
     id: 'stat-1',
-    value: 28,
+    value: 1,
     suffix: '+',
     label: 'Years of Excellence',
     icon: 'award',
   },
   {
     id: 'stat-2',
-    value: 150,
+    value: 50,
     suffix: '+',
     label: 'Expert Doctors',
     icon: 'stethoscope',
   },
   {
     id: 'stat-3',
-    value: 85000,
+    value: 500,
     suffix: '+',
     label: 'Successful Surgeries',
     icon: 'activity',
   },
   {
     id: 'stat-4',
-    value: 4200000,
+    value: 2000,
     suffix: '+',
     label: 'Happy Patients',
     icon: 'heart',
@@ -108,8 +108,8 @@ export const facilitiesData: Facility[] = [
   },
   {
     id: 'fac-2',
-    title: '3T MRI & 128-Slice CT Scan',
-    description: 'Cutting-edge 3 Tesla MRI and 128-slice CT imaging for ultra-precise diagnosis of neurological, musculoskeletal, and vascular conditions.',
+    title: 'Advanced USG & Echocardiography',
+    description: 'We are committed to delivering accurate and timely diagnostic services through our Advanced USG (Ultrasonography) and Echocardiography facilities.',
     icon: 'scan',
   },
   {
@@ -120,8 +120,8 @@ export const facilitiesData: Facility[] = [
   },
   {
     id: 'fac-4',
-    title: 'Robotic Surgery Suite',
-    description: 'Minimally invasive robotic-assisted surgeries for faster recovery, reduced pain, and superior surgical precision.',
+    title: 'Advanced Radiology',
+    description: 'Our Advanced Radiology Department is equipped with modern imaging technology to provide accurate, reliable, and timely diagnostic services.',
     icon: 'cpu',
   },
   {
@@ -168,8 +168,8 @@ export const facilitiesData: Facility[] = [
   },
   {
     id: 'fac-12',
-    title: 'Telemedicine',
-    description: 'Remote consultation services connecting patients across Andhra Pradesh and Telangana with our specialist doctors online.',
+    title: '24 hrs Pharmacy',
+    description: 'Our 24 Hours Pharmacy is dedicated to ensuring that patients and their families have uninterrupted access to essential medicines and healthcare products at any time of the day or night.',
     icon: 'video',
   },
 ]
@@ -179,21 +179,23 @@ export const facilitiesData: Facility[] = [
 export const diagnosticServicesHome: DiagnosticService[] = [
   {
     id: 'diag-1',
-    title: '3T MRI (3 Tesla)',
-    description: 'Our 3 Tesla MRI scanner delivers exceptional image clarity, enabling precise detection of brain tumours, spinal injuries, joint pathologies, and abdominal abnormalities. The scan is fast, non-invasive, and radiation-free, making it suitable for patients of all ages.',
-    image: 'https://images.unsplash.com/photo-1584036561584-b03c19da874c?w=800&q=80&fit=crop',
+    title: 'USG, Echo & Color Doppler',
+    description: 'At Tirupati Balaji Health Care Group, we offer advanced USG (Ultrasonography), Echocardiography (ECHO), and Color Doppler services to ensure accurate diagnosis and timely medical intervention. Equipped with modern technology and operated by experienced specialists, our diagnostic imaging services provide detailed insights into various health conditions while maintaining the highest standards of patient care.',
+    image: '/images/service-1.webp',
     bullets: [
-      'Brain & spine imaging',
-      'Cardiac MRI',
-      'Musculoskeletal studies',
-      'MR Angiography',
+      'Abdominal and Pelvic USG',
+      '2D Echocardiography (ECHO)',
+      'Obstetric and Pregnancy Scans',
+      'Thyroid and Neck Ultrasonography',
+      'Cardiac Function and Heart Valve Assessment',
+      'Arterial and Venous Color Doppler Studies',
     ],
   },
   {
     id: 'diag-2',
-    title: '128-Slice CT Scanner',
-    description: 'The 128-slice multi-detector CT provides rapid, high-resolution cross-sectional images of the entire body. Ideal for trauma assessment, pulmonary embolism, cancer staging, and vascular imaging, it dramatically reduces scan time while maximizing diagnostic accuracy.',
-    image: 'https://images.unsplash.com/photo-1551076805-e1869033e561?w=800&q=80&fit=crop',
+    title: 'Advance X-Ray Department',
+    description: 'At Tirupati Balaji Health Care Group, our X-Ray Department is equipped with advanced digital imaging technology to provide accurate and efficient diagnostic services. We understand that timely and precise diagnosis is essential for effective treatment, which is why our experienced radiology team is committed to delivering high-quality imaging with utmost care and professionalism.',
+    image: '/images/service-2.webp',
     bullets: [
       'CT Angiography with auto-injector',
       'Virtual colonoscopy',
@@ -203,9 +205,9 @@ export const diagnosticServicesHome: DiagnosticService[] = [
   },
   {
     id: 'diag-3',
-    title: '4D USG & Colour Doppler',
-    description: 'Advanced 4-dimensional ultrasound and colour Doppler studies offer real-time visualization of fetal growth, blood flow dynamics, and soft tissue abnormalities. Our sonographers are trained in obstetric, cardiac, and vascular Doppler examinations.',
-    image: 'https://images.unsplash.com/photo-1516069677018-378515003435?w=800&q=80&fit=crop',
+    title: 'Modern & Equiped Pathology',
+    description: 'At Tirupati Balaji Health Care Group, our Modern & Equipped Pathology Department is committed to delivering accurate, reliable, and timely diagnostic services using advanced laboratory technology and state-of-the-art equipment. We understand that precise diagnosis is the cornerstone of effective treatment, and our experienced team works diligently to ensure the highest standards of quality and patient care.',
+    image: '/images/service-3.webp',
     bullets: [
       'Fetal anomaly screening',
       'Carotid Doppler',
